@@ -19,6 +19,7 @@ if [ $# != 1 ]; then
 fi 
 
 SWBD_DIR=$1
+echo $SWBD_DIR
 
 dir=data/local/train
 mkdir -p $dir

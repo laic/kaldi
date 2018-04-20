@@ -59,6 +59,7 @@ n=`cat $dir/sph.flist | wc -l`
 # make everything lowercase here. This is because we will be using SRILM which
 # can optionally make everything lowercase (but not uppercase) when mapping 
 # LM vocabs.
+## Converts start and entimes
 awk '{ 
        name=substr($1,1,6); gsub("^sw","sw0",name); side=substr($1,7,1); 
        stime=$2; etime=$3;
